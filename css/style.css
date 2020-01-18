@@ -1,11 +1,36 @@
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   text-align: center;
   background: #fff;
   color: #3d3d3d;
-  font-family: "Open Sans", sans serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.7;
+}
+
+.section-title {
+  font-size: 48px;
+  font-family: "Merriweather", serif;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 0 0 12px 0;
+}
+
+.subtitle {
+  font-style: italic;
+  font-family: "Merriweather", serif;
+  color: #AEB6BF;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
 }
 
 /* navigation */
@@ -55,10 +80,10 @@ body {
   background-attachment: fixed;
 }
 
-.splash .btn btn-one {
-  border-color: #ffff00;
+.splash .btn {
+  border-color: #F1C40F;
   color: #ffffff;
-  background-image: #ffff00;
+  background: #F1C40F;
 }
 
 /* services */
@@ -75,17 +100,6 @@ body {
       justify-content: space-between;
 }
 
-.section-title {
-  font-size: 48px;
-  margin: 0 0 72px 0;
-  text-align: left;
-}
-
-h3 {
-  font-size: 24px;
-  margin: 0 0 12px 0;
-}
-
 .inside-box {
   -ms-flex: 0 0 33.333%;
       flex: 0 0 33.333%;
@@ -94,13 +108,23 @@ h3 {
   padding: 5px 10px;
 }
 
+.inside-box i {
+  color: #F1C40F;
+  font-size: 50px;
+}
+
 img {
   max-width: 250px;
   height: auto;
   position: relative;
 }
 
-article {
+/* portfolio */
+.portfolio {
+  background: #F2F4F4;
+}
+
+.portfolio article {
   width: 50%;
   display: table;
   min-height: 300px;
@@ -109,7 +133,7 @@ article {
   padding: 0 0 96px 0;
 }
 
-.wrapper-image {
+.portfolio .wrapper-image {
   width: calc(50% - 10px);
   margin-left: 10px;
   position: relative;
