@@ -121,10 +121,26 @@ img {
 
 /* portfolio */
 .portfolio {
+  width: 100%;
+  margin: 96px 0;
+  padding-top: 20px;
   background: #F2F4F4;
 }
 
-.portfolio article {
+.portfolio .container {
+  display: block;
+}
+
+.portfolio .container .wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.portfolio .container .wrapper article {
   width: 50%;
   display: table;
   min-height: 300px;
@@ -133,8 +149,9 @@ img {
   padding: 0 0 96px 0;
 }
 
-.portfolio .wrapper-image {
+.portfolio .container .wrapper article .wrapper-image {
   width: calc(50% - 10px);
+  padding-top: 80px;
   margin-left: 10px;
   position: relative;
   height: 100%;
@@ -172,5 +189,34 @@ li i {
 
 i:hover {
   transform: scale(1.2);
+}
+
+/* Media */
+@media (max-width: 767px) {
+  .page-title {
+    font-size: 60px;
+  }
+  .wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .work .wrapper {
+    position: relative;
+  }
+  .work .wrapper article {
+    width: 100%;
+  }
+  .work .wrapper article .wrapper-image {
+    width: 100%;
+  }
+  .work .wrapper article .wrapper-descripion {
+    width: 100%;
+  }
+  .wrapper span {
+    position: relative;
+  }
+  .contact .form {
+    max-width: 400px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

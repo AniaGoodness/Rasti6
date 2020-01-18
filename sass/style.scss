@@ -105,23 +105,35 @@ img {
 }
 /* portfolio */
 .portfolio {
+    width: 100%;
+    margin: 96px 0;
+    padding-top: 20px;
     background: #F2F4F4;
-    article {
-      width: 50%;
-      display: table;
-      min-height: 300px;
-      display: inline-block;
-      float: left;
-      padding: 0 0 96px 0;
-    }
-    .wrapper-image {
-      width: calc(50% - 10px);
-      margin-left: 10px;
-      position:relative;
-      height: 100%;
-      display: inline-block;
-    }
-}
+      .container {
+        display: block;
+          .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+              article {
+                width: 50%;
+                display: table;
+                min-height: 300px;
+                display: inline-block;
+                float: left;
+                padding: 0 0 96px 0;
+                  .wrapper-image {
+                    width: calc(50% - 10px);
+                    padding-top: 80px;
+                    margin-left: 10px;
+                    position:relative;
+                    height: 100%;
+                    display: inline-block;
+                  }
+                }
+            }
+        }
+  }
   /* footer */
 .page-footer .container {
   display: table;
@@ -144,4 +156,36 @@ li i {
   color: #000000;
   transition: 2s; }
   i:hover {
-    transform: scale(1.2); }
+    transform: scale(1.2);
+  }
+  /* Media */
+@media (max-width: 767px) {
+    .page-title {
+    font-size: 60px;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .work {
+        .wrapper {
+            position:relative;
+                article {
+                    width: 100%;
+                        .wrapper-image {
+                            width: 100%;
+                        }
+                        .wrapper-descripion {
+                            width: 100%;
+                        }
+                }
+        }
+    }
+    .wrapper span {
+        position: relative;
+    }
+    .contact {
+        .form {
+            max-width: 400px;
+        }
+    }
+}
