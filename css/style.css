@@ -22,7 +22,8 @@ body {
 
 h3 {
   font-size: 24px;
-  margin: 0 0 12px 0;
+  margin: 30px 0 30px 0px;
+  font-weight: bold;
 }
 
 .subtitle {
@@ -103,14 +104,20 @@ h3 {
 .inside-box {
   -ms-flex: 0 0 33.333%;
       flex: 0 0 33.333%;
+  padding: 0 30px;
   position: relative;
   text-align: center;
-  padding: 5px 10px;
 }
 
 .inside-box i {
   color: #F1C40F;
-  font-size: 50px;
+  font-size: 40px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #fff;
+  line-height: 87px;
+  border: 3px solid #F1C40F;
 }
 
 img {
@@ -141,8 +148,9 @@ img {
 }
 
 .portfolio .container .wrapper article {
-  width: 50%;
-  display: table;
+  width: 31,3%;
+  background: #fff;
+  margin: 0 1% 30px;
   min-height: 300px;
   display: inline-block;
   float: left;
@@ -150,12 +158,21 @@ img {
 }
 
 .portfolio .container .wrapper article .wrapper-image {
-  width: calc(50% - 10px);
-  padding-top: 80px;
-  margin-left: 10px;
   position: relative;
-  height: 100%;
+}
+
+.portfolio .container .wrapper article .wrapper-image img {
+  width: 100%;
   display: inline-block;
+}
+
+.portfolio .container .wrapper .wrapper-title {
+  margin-top: 10px;
+}
+
+.portfolio .container .wrapper .wrapper-title a {
+  color: #AEB6BF;
+  line-height: 0.3;
 }
 
 /* footer */
@@ -187,8 +204,10 @@ li i {
   transition: 2s;
 }
 
-i:hover {
+li i:hover {
   transform: scale(1.2);
+  color: #F1C40F;
+  border-color: #F1C40F;
 }
 
 /* Media */

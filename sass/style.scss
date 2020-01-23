@@ -1,6 +1,8 @@
 /* Global */
 $font-text: 'Open Sans', sans-serif;
 $font-header: 'Merriweather', serif;
+$color-two: #F1C40F;
+$color-one: #AEB6BF;
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -21,12 +23,13 @@ body {
 }
 h3 {
   font-size: 24px;
-  margin: 0 0 12px 0;
+  margin: 30px 0 30px 0px;
+  font-weight: bold;
 }
 .subtitle {
       font-style: italic;
       font-family: $font-header;
-      color: #AEB6BF;
+      color: $color-one;
       margin-bottom: 60px;
       padding-bottom: 20px;
 }
@@ -72,9 +75,9 @@ h3 {
     background-size: cover;
     background-attachment: fixed;
     .btn {
-      border-color: #F1C40F;
+      border-color: $color-two;
       color: #ffffff;
-      background: #F1C40F;
+      background: $color-two;
     }
 }
 /* services */
@@ -89,12 +92,18 @@ h3 {
 
 .inside-box {
   flex: 0 0 33.333%;
+  padding: 0 30px;
   position: relative;
   text-align: center;
-  padding: 5px 10px;
   i {
     color: #F1C40F;
-    font-size: 50px;
+    font-size: 40px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #fff;
+    line-height: 87px;
+    border:3px solid #F1C40F;
   }
 }
 
@@ -116,19 +125,26 @@ img {
             flex-wrap: wrap;
             justify-content: space-between;
               article {
-                width: 50%;
-                display: table;
+                width: 31,3%;
+                background:#fff;
+                margin:0 1% 30px;
                 min-height: 300px;
                 display: inline-block;
                 float: left;
                 padding: 0 0 96px 0;
                   .wrapper-image {
-                    width: calc(50% - 10px);
-                    padding-top: 80px;
-                    margin-left: 10px;
                     position:relative;
-                    height: 100%;
-                    display: inline-block;
+                    img {
+                      width: 100%;
+                      display: inline-block;
+                    }
+                  }
+                }
+                .wrapper-title {
+                  margin-top: 10px;
+                  a {
+                    color: $color-one;
+                    line-height: 0.3;
                   }
                 }
             }
@@ -154,10 +170,13 @@ li i {
   padding: 20px;
   font-size: 40px;
   color: #000000;
-  transition: 2s; }
-  i:hover {
-    transform: scale(1.2);
+  transition: 2s;
+    &:hover {
+      transform: scale(1.2);
+      color: $color-two;
+      border-color: $color-two;
   }
+}
   /* Media */
 @media (max-width: 767px) {
     .page-title {
