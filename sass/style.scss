@@ -22,8 +22,8 @@ body {
   text-align: center;
 }
 h3 {
-  font-size: 24px;
-  margin: 30px 0 30px 0px;
+  font-size: 22px;
+  margin: 30px 0 20px 0px;
   font-weight: bold;
 }
 .subtitle {
@@ -57,13 +57,16 @@ h3 {
 .page-title {
   color: #ffffff;
   position: relative;
-  font-family: "Open Sans", sans serif;
-  font-size: 50px;
-  margin: 80px 0 0 0
+  font-family: $font-header;
+  font-style: italic;
+  font-size: 44px;
+  margin: 80px 0 10px 0;
 }
 .page-subtitle {
-  font-size: 80px;
+  font-size: 70px;
   color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 40px;
 }
 
 /* splash */
@@ -75,10 +78,14 @@ h3 {
     background-size: cover;
     background-attachment: fixed;
     .btn {
-      border-color: $color-two;
-      color: #ffffff;
-      background: $color-two;
-    }
+        border-color: $color-two;
+        color: #ffffff;
+        background: $color-two;
+        width: 140px;
+        height: 70px;
+        padding-top: 20px;
+        border:3px solid #F1C40F;
+      }
 }
 /* services */
 .services {
@@ -88,8 +95,6 @@ h3 {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
-
 .inside-box {
   flex: 0 0 33.333%;
   padding: 0 30px;
@@ -116,10 +121,11 @@ img {
 .portfolio {
     width: 100%;
     margin: 96px 0;
-    padding-top: 20px;
+    padding: 96px 0;
     background: #F2F4F4;
       .container {
         display: block;
+        width: 1000px;
           .wrapper {
             display: flex;
             flex-wrap: wrap;
@@ -128,10 +134,9 @@ img {
                 width: 31,3%;
                 background:#fff;
                 margin:0 1% 30px;
-                min-height: 300px;
+                height: 300px;
                 display: inline-block;
                 float: left;
-                padding: 0 0 96px 0;
                   .wrapper-image {
                     position:relative;
                     img {
@@ -142,6 +147,8 @@ img {
                 }
                 .wrapper-title {
                   margin-top: 10px;
+                  h3 {
+                    font-size: 20px;}
                   a {
                     color: $color-one;
                     line-height: 0.3;
@@ -175,6 +182,7 @@ li i {
       transform: scale(1.2);
       color: $color-two;
       border-color: $color-two;
+      transition:1s;
   }
 }
   /* Media */
