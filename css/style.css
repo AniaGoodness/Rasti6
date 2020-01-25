@@ -127,12 +127,6 @@ h3 {
   border: 3px solid #F1C40F;
 }
 
-img {
-  max-width: 250px;
-  height: auto;
-  position: relative;
-}
-
 /* portfolio */
 .portfolio {
   width: 100%;
@@ -155,10 +149,9 @@ img {
 }
 
 .portfolio .container .wrapper article {
-  width: 31,3%;
+  width: 31.3%;
   background: #fff;
   margin: 0 1% 30px;
-  height: 300px;
   display: inline-block;
   float: left;
 }
@@ -174,10 +167,13 @@ img {
 
 .portfolio .container .wrapper .wrapper-title {
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .portfolio .container .wrapper .wrapper-title h3 {
   font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .portfolio .container .wrapper .wrapper-title a {
@@ -228,6 +224,9 @@ li i:hover {
   }
   .page-subtitle {
     font-size: 30px;
+  }
+  img {
+    max-width: 100%;
   }
   .wrapper {
     -ms-flex-direction: column;
