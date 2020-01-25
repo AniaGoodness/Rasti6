@@ -103,14 +103,14 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-pack: justify;
-      justify-content: space-between;
+  justify-content: space-between;
 }
 
 .inside-box {
   -ms-flex: 0 0 33.333%;
-      flex: 0 0 33.333%;
+  flex: 0 0 33.333%;
   padding: 0 30px;
   position: relative;
   text-align: center;
@@ -143,16 +143,15 @@ img {
 
 .portfolio .container {
   display: block;
-  width: 1000px;
 }
 
 .portfolio .container .wrapper {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-pack: justify;
-      justify-content: space-between;
+  justify-content: space-between;
 }
 
 .portfolio .container .wrapper article {
@@ -225,11 +224,14 @@ li i:hover {
 /* Media */
 @media (max-width: 767px) {
   .page-title {
-    font-size: 60px;
+    font-size: 20px;
+  }
+  .page-subtitle {
+    font-size: 30px;
   }
   .wrapper {
     -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
   }
   .work .wrapper {
     position: relative;
